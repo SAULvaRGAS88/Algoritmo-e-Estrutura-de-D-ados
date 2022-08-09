@@ -23,4 +23,9 @@ def imprimirQuantidade(QuantidadeProduto):
 print(f'O produto {NomeProduto[0]} custa {PrecoProduto[0]} e tem {QuantidadeProduto[0]} unidades')  
 
 
-def removerItem ([NomeProduto] , [PrecoProduto])
+def removerItem(NomeProduto):
+    return(NomeProduto)
+NomeProduto.remove("cafe")
+
+imprimirNome(NomeProduto)
+print(NomeProduto)
