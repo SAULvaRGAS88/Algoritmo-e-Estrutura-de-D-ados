@@ -62,21 +62,20 @@ NomeProduto = ["cafe", "sal", "laranja"]
 PrecoProduto = ["5", "2", "4"]
 QuantidadeProduto = ["10", "50", "15"]
 
-def imprimir(NomeProduto):
-   print(NomeProduto[1])
-   print(PrecoProduto[1])
-   print(QuantidadeProduto[1])
+def imprimir():
+   print(NomeProduto)
+   print(PrecoProduto)
+   print(QuantidadeProduto)
 
 
 def remover():
-    NomeProduto.pop()
-    PrecoProduto.pop()
-    QuantidadeProduto.pop()
-    return NomeProduto
+    NomeProduto.pop([0])
+    PrecoProduto.pop([0])
+    QuantidadeProduto.pop([0])
 
-imprimir(NomeProduto)
+imprimir(NomeProduto[1])
 remover()
-imprimir(NomeProduto)
+
 
 
 # def imprimirProduto(PrecoProduto):
