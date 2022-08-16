@@ -9,6 +9,16 @@ e largura.
 ○ Método que imprime os valores dos atributos
 da classe.
 """
+class Retangulo:
+    def __init__(self, altura, largura):
+        self.altura = altura
+        self.largura = largura
 
-class Largura:
-    def 
+    def calcularArea(self):
+        return ((self.largura)*(self.altura))
+
+    def imprimir():
+        print(area)
+
+area = Retangulo (5, 5)
+area.imprimir(area)
