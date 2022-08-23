@@ -15,10 +15,13 @@ class Retangulo:
         self.largura = largura
 
     def calcularArea(self):
-        return ((self.largura)*(self.altura))
+        return self.altura*self.largura
 
-    def imprimir():
-        print(area)
+    def imprimir(self):
+        print(f'''Altura: {self.altura} m , 
+largura: {self.largura} m.''')
 
-area = Retangulo (5, 5)
-area.imprimir(area)
+retangulo = Retangulo (5, 5)
+print(retangulo)
+print(f"Area: {retangulo.calcularArea()}m")
+retangulo.imprimir()
