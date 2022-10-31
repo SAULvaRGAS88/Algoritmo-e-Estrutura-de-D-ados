@@ -1,4 +1,3 @@
-from tkinter import N
 from No import No
 
 class Lista:
