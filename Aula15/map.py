@@ -1,34 +1,34 @@
 def getTamanho(x):
     return len(x)
 
-def aumentaPreco(p):
-    return p * 1.1
+# def aumentaPreco(p):
+#     return p * 1.1
 
-frutas = ["Laranja", "Banana", "Melancia"]
-jogadores = ("Maria", "José", "Júlia", "Carlos", "Joana", "Marcelo")
+# frutas = ["Laranja", "Banana", "Melancia"]
+carros = ("Corsa", "Palio", "Corolla", "Savero", "Fusca", "Meriva")
 
-tamanhoFrutas = map(getTamanho, frutas)
-print("Frutas:",list(tamanhoFrutas))
+# tamanhoFrutas = map(getTamanho, frutas)
+# print("Frutas:",list(tamanhoFrutas))
 
-tamanhoJogadores = map(getTamanho, jogadores)
-print("Frutas:",list(tamanhoJogadores))
+tamanhoCarro = map(getTamanho, carros)
+print("CARRO:",list(tamanhoCarro))
 
-precos = [6.0, 5.50, 4.99, 10.80]
+# precos = [6.0, 5.50, 4.99, 10.80]
 
-novosPrecos = map(aumentaPreco, precos)
-print("Novos Preços:", list(novosPrecos))
+# novosPrecos = map(aumentaPreco, precos)
+# print("Novos Preços:", list(novosPrecos))
 
-produto = {
-    0: 10.0,
-    1: 5.0,
-    5: 1.5
-}
+# produto = {
+#     0: 10.0,
+#     1: 5.0,
+#     5: 1.5
+# }
 
-print(produto)
+# print(produto)
 
-novoProduto = map(aumentaPreco, produto)
-print(list(novoProduto))
+# novoProduto = map(aumentaPreco, produto)
+# print(list(novoProduto))
 
-novoProduto = map(aumentaPreco, produto.values())
-print(list(novoProduto))
+# novoProduto = map(aumentaPreco, produto.values())
+# print(list(novoProduto))
 

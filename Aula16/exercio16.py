@@ -10,9 +10,12 @@ iterações foram necessárias em cada função."""
 
 
 def buscaSequencial(lista, chave):
+    cont = 0
     for i in range(len(lista)):
+        cont = cont + 1
         if lista[i] == chave:
             print("O numero", chave, 'esta na posição', i)
+            print('Numeros de iteraçoes:', cont)
             break
     else:
         print("Número", chave, "não encontrado na lista")
@@ -21,16 +24,17 @@ def buscaSequencial(lista, chave):
 def buscaBinaria(lista, chave):
     inicio = 0
     fim = len(lista)-1
+    cont = 0
     while inicio <= fim:
         meio = (inicio + fim)//2
+        cont = cont + 1
         if lista[meio] == chave:
+            print('Número digitado:', chave, cont ,'iteraçoes')
             break
         elif lista[meio] > chave:
             fim = meio - 1
-            break
         else:
             inicio =  meio + 1
-            break
     else:
         print("Número", lista, "não encontrado na lista")
 
